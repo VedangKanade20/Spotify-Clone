@@ -1,4 +1,4 @@
-import { Divider, Flex, Heading } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Sidebar from "../components/Sidebar";
 
 const HomeScreen = () => {
