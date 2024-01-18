@@ -1,4 +1,4 @@
-import { Flex, Grid, Heading } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 
 const HomeScreen = () => {
   return (
@@ -7,17 +7,10 @@ const HomeScreen = () => {
         direction="column"
         w="300px"
         h="100vh"
-        alignItems="start"
+        alignItems="center"
         bgColor="green.400"
-      >
-        <Flex direction="column">
-          <Grid height="300px" templateColumns="repeat(2, 1fr)">
-            <Flex bgColor="yellow"></Flex>
-            <Flex bgColor="red"></Flex>
-          </Grid>
-        </Flex>
-      </Flex>
-      <Flex w="500px" h="100vh">
+      ></Flex>
+      <Flex w="100vw" h="100vh">
         <Heading>Hello</Heading>
       </Flex>
     </Flex>
