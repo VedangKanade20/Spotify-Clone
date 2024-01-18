@@ -1,9 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>Hello</div>
+      <div>
+        <HomeScreen />
+      </div>
     </BrowserRouter>
   );
 }
