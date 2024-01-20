@@ -7,39 +7,39 @@ const Sidebar = () => {
     <Flex
       direction="column"
       alignItems="center"
-      w="25vw"
+      w="20vw"
       bgColor="gray.600"
       borderRadius="15"
     >
       <Flex
         dir="column"
-        gap="50px"
+        gap="25px"
         alignItems="center"
         alignContent="center"
         mt="25px"
-        w="20vw"
-        h="10vh"
+        w="10vw"
+        h="5vh"
         bgColor="black"
         borderRadius="10"
       >
-        <MdHome size="40" color="white" />
-        <Heading as="h3" size="xl" color="white">
+        <MdHome size="20" color="white" />
+        <Heading as="h3" size="md" color="white">
           Home
         </Heading>
       </Flex>
       <Flex
         dir="column"
-        gap="50px"
+        gap="25px"
         alignItems="center"
         alignContent="center"
         mt="25px"
-        w="20vw"
-        h="10vh"
+        w="10vw"
+        h="5vh"
         bgColor="black"
         borderRadius="10"
       >
-        <FiSearch size="40" color="white" />
-        <Heading as="h3" size="xl" color="white">
+        <FiSearch size="20" color="white" />
+        <Heading as="h3" size="md" color="white">
           Search
         </Heading>
       </Flex>
