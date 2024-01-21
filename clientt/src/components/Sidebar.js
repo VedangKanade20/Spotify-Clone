@@ -1,6 +1,7 @@
 import { Divider, Flex, Heading } from "@chakra-ui/react";
 import { FiSearch } from "react-icons/fi";
 import { MdHome } from "react-icons/md";
+import { image } from "../images/mainLOGO.png";
 
 const Sidebar = () => {
   return (
@@ -11,6 +12,19 @@ const Sidebar = () => {
       bgColor="gray.600"
       borderRadius="15"
     >
+      <Flex
+        dir="column"
+        gap="25px"
+        alignItems="center"
+        alignContent="center"
+        mt="25px"
+        w="10vw"
+        h="5vh"
+        bgColor="black"
+        borderRadius="10"
+      >
+        
+      </Flex>
       <Flex
         dir="column"
         gap="25px"
