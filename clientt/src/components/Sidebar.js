@@ -70,7 +70,7 @@ const Sidebar = () => {
       <Divider orientation="horizontal" mt="5" w="15vw" />
       {/* 2nd Section */}
       <Flex
-        dir="column"
+        direction="column"
         gap="25px"
         alignContent="center"
         mt="5"
@@ -80,16 +80,25 @@ const Sidebar = () => {
         h="15vw"
         overflowY="auto"
       >
-        <Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
+        </Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
+        </Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
+        </Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
+        </Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
+        </Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
-          <Text>Legal</Text>
-          <Text>Legal</Text>
-          <Text>Legal</Text>
+        </Flex>
+        <Flex direction="row" textColor="white" gap="5px">
           <Text>Legal</Text>
         </Flex>
       </Flex>
@@ -105,12 +114,24 @@ const Sidebar = () => {
         overflowY="auto"
       >
         <Grid templateColumns="1fr 1fr " gap="2px" textColor="white">
-          <Text>Legal</Text>
-          <Text>Privacy </Text>
-          <Text>Cookies</Text>
-          <Text>Privacy Policy</Text>
-          <Text>About Ads</Text>
-          <Text>Accessibilities</Text>
+          <Flex>
+            <Text>Legal</Text>
+          </Flex>
+          <Flex>
+            <Text>Privacy </Text>
+          </Flex>
+          <Flex>
+            <Text>Cookies</Text>
+          </Flex>
+          <Flex>
+            <Text>Privacy Policy</Text>
+          </Flex>
+          <Flex>
+            <Text>About Ads</Text>
+          </Flex>
+          <Flex>
+            <Text>Accessibilities</Text>
+          </Flex>
         </Grid>
       </Flex>
     </Flex>
