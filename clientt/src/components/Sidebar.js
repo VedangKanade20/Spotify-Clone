@@ -77,10 +77,17 @@ const Sidebar = () => {
         bgColor="black"
         borderRadius="10"
         w="12vw"
-        h="15vw"
+        h="30vh"
         overflowY="auto"
       >
-        <Flex direction="row" textColor="white" gap="5px">
+        <Flex
+          direction="row"
+          textColor="white"
+          gap="5px"
+          bgColor="red"
+          w="10vw"
+          h="8vh"
+        >
           <Text>Legal</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
