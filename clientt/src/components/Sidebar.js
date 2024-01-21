@@ -1,8 +1,9 @@
-import { Divider, Image, Flex, Heading } from "@chakra-ui/react";
+import { Divider, Image, Flex, Heading, Grid, Text } from "@chakra-ui/react";
 import { FiSearch } from "react-icons/fi";
 import { MdHome } from "react-icons/md";
 import IMAGE from "../images/mainLOGO.png";
 import { Link } from "react-router-dom";
+import { LuLibrary } from "react-icons/lu";
 
 const Sidebar = () => {
   return (
@@ -13,6 +14,7 @@ const Sidebar = () => {
       bgColor="gray.600"
       borderRadius="15"
     >
+      {/* 1st Section */}
       <Flex
         dir="column"
         gap="25px"
@@ -64,6 +66,52 @@ const Sidebar = () => {
         <Heading as="h3" size="md" color="white">
           Search
         </Heading>
+      </Flex>
+      <Divider orientation="horizontal" mt="5" w="15vw" />
+      {/* 2nd Section */}
+      <Flex
+        dir="column"
+        gap="25px"
+        alignContent="center"
+        mt="5"
+        bgColor="black"
+        borderRadius="10"
+        w="12vw"
+        h="15vw"
+        overflowY="auto"
+      >
+        <Flex>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+          <Text>Legal</Text>
+        </Flex>
+      </Flex>
+      <Divider orientation="horizontal" mt="5" w="15vw" />
+      {/* 3rd Section */}
+      <Flex
+        dir="column"
+        mt="5"
+        bgColor="black"
+        borderRadius="10"
+        w="12vw"
+        h="12vw"
+        overflowY="auto"
+      >
+        <Grid templateColumns="1fr 1fr " gap="2px" textColor="white">
+          <Text>Legal</Text>
+          <Text>Privacy </Text>
+          <Text>Cookies</Text>
+          <Text>Privacy Policy</Text>
+          <Text>About Ads</Text>
+          <Text>Accessibilities</Text>
+        </Grid>
       </Flex>
     </Flex>
   );
