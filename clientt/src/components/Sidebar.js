@@ -4,6 +4,7 @@ import { MdHome } from "react-icons/md";
 import IMAGE from "../images/mainLOGO.png";
 import { Link } from "react-router-dom";
 import { LuLibrary } from "react-icons/lu";
+import { FaPlus } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
@@ -11,7 +12,7 @@ const Sidebar = () => {
       direction="column"
       alignItems="center"
       w="15vw"
-      bgColor="gray.600"
+      bgColor="#121212"
       borderRadius="15"
     >
       {/* 1st Section */}
@@ -70,14 +71,30 @@ const Sidebar = () => {
       <Divider orientation="horizontal" mt="5" w="15vw" />
       {/* 2nd Section */}
       <Flex
+        direction="row"
+        bgColor="black"
+        w="15vw"
+        h="5vh"
+        alignItems="center"
+        gap="5"
+        mt="10px"
+        borderRadius="10"
+      >
+        <LuLibrary size="30" color="white" />
+        <Heading as="h3" size="md" color="white">
+          Your Library
+        </Heading>
+        <FaPlus size="26" color="white" />
+      </Flex>
+      <Flex
         direction="column"
         gap="25px"
         alignContent="center"
-        mt="5"
         bgColor="black"
         borderRadius="10"
-        w="12vw"
+        w="15vw"
         h="30vh"
+        mt="1"
         overflowY="auto"
       >
         <Flex
@@ -88,25 +105,25 @@ const Sidebar = () => {
           w="10vw"
           h="8vh"
         >
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
-          <Text>Legal</Text>
+          <Text>Song Name</Text>
         </Flex>
       </Flex>
       <Divider orientation="horizontal" mt="5" w="15vw" />
