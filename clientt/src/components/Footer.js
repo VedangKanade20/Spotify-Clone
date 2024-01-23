@@ -1,15 +1,22 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Divider, Flex, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Flex as="footer" direction="row" justifyContent="center" py="5">
-      <Flex direction="column" alignContent="flex-start">
+    <Flex as="footer" direction="row" py="1">
+      <Flex direction="column" alignContent="start">
         <Flex>
-          <Text>Hello</Text>
+          <Text>SignUp For Free</Text>
         </Flex>
+        <Divider orientation="horizontal" color="red" w="70" />
         <Flex>
-          <Text>Hello</Text>
+          <Text>
+            Sign up to get unlimited songs and podcasts with occasional ads. No
+            credit card Needed.
+          </Text>
         </Flex>
+      </Flex>
+      <Flex justifyContent="end" bgColor="gray">
+        <Text>Hello</Text>
       </Flex>
     </Flex>
   );
