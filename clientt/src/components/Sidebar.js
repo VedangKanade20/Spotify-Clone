@@ -27,13 +27,7 @@ const Sidebar = () => {
         bgColor="black"
         borderRadius="10"
       >
-        <Image
-          src={IMAGE}
-          objectFit="cover"
-          width="150px"
-          height="32px"
-          borderRadius="10"
-        />
+        <Image src={IMAGE} objectFit="cover" width="150px" height="32px" />
       </Flex>
       <Flex
         dir="column"
