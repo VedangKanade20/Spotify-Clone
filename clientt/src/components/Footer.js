@@ -15,8 +15,8 @@ const Footer = () => {
           </Text>
         </Flex>
       </Flex>
-      <Flex justifyContent="end" bgColor="gray">
-        <Text>Hello</Text>
+      <Flex justifyContent="end" bgColor="pink" borderRadius="10">
+        <Text>SignUp For Free!!</Text>
       </Flex>
     </Flex>
   );
