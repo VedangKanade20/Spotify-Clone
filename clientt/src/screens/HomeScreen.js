@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 
 const HomeScreen = () => {
   return (
-    <Flex direction="row" w="100vw" h="100vh" bgColor="#000000">
+    <Flex direction="row" w="100vw" h="90vh" bgColor="#000000">
       <Sidebar />
     </Flex>
   );
