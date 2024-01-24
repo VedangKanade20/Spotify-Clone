@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
-import { Flex,Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 
 function App() {
