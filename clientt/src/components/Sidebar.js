@@ -11,7 +11,7 @@ const Sidebar = () => {
     <Flex
       direction="column"
       alignItems="center"
-      w="15vw"
+      w="17vw"
       bgColor="#121212"
       borderRadius="15"
     >
@@ -62,7 +62,7 @@ const Sidebar = () => {
           Search
         </Heading>
       </Flex>
-      <Divider orientation="horizontal" mt="5" w="15vw" />
+      <Divider orientation="horizontal" mt="5" w="17vw" />
       {/* 2nd Section */}
       <Flex
         direction="row"
@@ -120,7 +120,7 @@ const Sidebar = () => {
           <Text>Song Name</Text>
         </Flex>
       </Flex>
-      <Divider orientation="horizontal" mt="5" w="15vw" />
+      <Divider orientation="horizontal" mt="5" w="17vw" />
       {/* 3rd Section */}
       <Flex
         dir="column"
