@@ -8,7 +8,8 @@ const Footer = () => {
       h="10vh"
       direction="row"
       py="1"
-      bgColor="purple.300"
+      bgGradient="linear(to-r, pink.500, purple.500)"
+      borderRadius="10"
     >
       <Flex direction="column" alignContent="start" w="95vw">
         <Flex>
@@ -16,7 +17,7 @@ const Footer = () => {
             SignUp For Free
           </Text>
         </Flex>
-        <Divider orientation="horizontal" color="black" w='51vw' />
+        <Divider orientation="horizontal" color="black" w="51vw" />
         <Flex>
           <Text fontFamily="sans-serif" fontSize="xl">
             Sign up to get unlimited songs and podcasts with occasional ads. No
@@ -24,8 +25,18 @@ const Footer = () => {
           </Text>
         </Flex>
       </Flex>
-      <Flex bgColor="pink" borderRadius="10" textAlign="center">
-        <Text>SignUp For Free!!</Text>
+      <Flex
+        bgGradient="linear(to-r, pink.500, purple.500)"
+        borderRadius="10"
+        textAlign="center"
+        _hover={{
+          bgGradient: "linear(to-r, purple.600, purple.400)",
+          cursor: "pointer",
+        }}
+      >
+        <Text fontFamily="sans-serif" fontSize="xl">
+          SignUp For Free!!
+        </Text>
       </Flex>
     </Flex>
   );
