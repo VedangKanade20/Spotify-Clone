@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <Flex
       direction="column"
-      alignItems="center"
+      alignItems="left"
       w="17vw"
       bgColor="#121212"
       borderRadius="15"
@@ -32,7 +32,7 @@ const Sidebar = () => {
       </Flex>
       <Flex
         dir="column"
-        gap="25px"
+        gap="15px"
         alignItems="center"
         alignContent="center"
         mt="25px"
@@ -49,9 +49,8 @@ const Sidebar = () => {
       </Flex>
       <Flex
         dir="column"
-        gap="25px"
+        gap="15px"
         alignItems="center"
-        alignContent="center"
         mt="25px"
         w="10vw"
         h="5vh"
@@ -71,7 +70,7 @@ const Sidebar = () => {
         w="15vw"
         h="5vh"
         alignItems="center"
-        gap="5"
+        gap="6"
         mt="10px"
         borderRadius="10"
       >
@@ -87,35 +86,55 @@ const Sidebar = () => {
         alignContent="center"
         // bgColor="black"
         borderRadius="10"
-        w="15vw"
+        w="17vw"
         h="30vh"
         mt="1"
         overflowY="auto"
+        mx="1"
       >
         <Flex
-          direction="row"
+          direction="column"
           textColor="white"
           gap="5px"
-          bgColor="red"
-          w="10vw"
-          h="8vh"
+          w="15vw"
+          h="17vh"
+          borderRadius="10px"
+          mt="2"
+          bgColor="gray.600"
         >
-          <Text>Song Name</Text>
+          <Heading size="s"> Create your first Playlist</Heading>
+          <Text>Its Easy, We will help You</Text>
+          <Flex
+            borderRadius="10px"
+            bgColor="gray.200"
+            w="fit-content"
+            textColor="black"
+          >
+            {" "}
+            Create Playlist!!
+          </Flex>
         </Flex>
-        <Flex direction="row" textColor="white" gap="5px">
-          <Text>Song Name</Text>
-        </Flex>
-        <Flex direction="row" textColor="white" gap="5px">
-          <Text>Song Name</Text>
-        </Flex>
-        <Flex direction="row" textColor="white" gap="5px">
-          <Text>Song Name</Text>
-        </Flex>
-        <Flex direction="row" textColor="white" gap="5px">
-          <Text>Song Name</Text>
-        </Flex>
-        <Flex direction="row" textColor="white" gap="5px">
-          <Text>Song Name</Text>
+        <Flex
+          direction="column"
+          textColor="white"
+          gap="5px"
+          w="15vw"
+          h="17vh"
+          borderRadius="10px"
+          mt="2"
+          bgColor="gray.600"
+        >
+          <Heading size="s"> Create your first Playlist</Heading>
+          <Text>Its Easy, We will help You</Text>
+          <Flex
+            borderRadius="10px"
+            bgColor="gray.200"
+            w="fit-content"
+            textColor="black"
+          >
+            {" "}
+            Create Playlist!!
+          </Flex>
         </Flex>
         <Flex direction="row" textColor="white" gap="5px">
           <Text>Song Name</Text>
@@ -141,7 +160,14 @@ const Sidebar = () => {
           <Text>About Ads</Text>
           <Text>Accessibilities</Text>
         </Flex>
-        <Flex direction="row" gap="2" w="7vw" borderRadius="10" border="dashed" textColor="white">
+        <Flex
+          direction="row"
+          gap="2"
+          w="7vw"
+          borderRadius="10"
+          border="dashed"
+          textColor="white"
+        >
           <MdLanguage size="25" />
           <Text size="xl">English</Text>
         </Flex>
