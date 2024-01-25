@@ -5,6 +5,7 @@ import IMAGE from "../images/mainLOGO.png";
 import { Link } from "react-router-dom";
 import { LuLibrary } from "react-icons/lu";
 import { FaPlus } from "react-icons/fa6";
+import { MdLanguage } from "react-icons/md";
 
 const Sidebar = () => {
   return (
@@ -24,7 +25,7 @@ const Sidebar = () => {
         mt="25px"
         w="10vw"
         h="5vh"
-        bgColor="black"
+        // bgColor="black"
         borderRadius="10"
       >
         <Image src={IMAGE} objectFit="cover" width="150px" height="32px" />
@@ -37,7 +38,7 @@ const Sidebar = () => {
         mt="25px"
         w="10vw"
         h="5vh"
-        bgColor="black"
+        // bgColor="black"
         borderRadius="10"
       >
         <MdHome size="20" color="white" />
@@ -54,7 +55,7 @@ const Sidebar = () => {
         mt="25px"
         w="10vw"
         h="5vh"
-        bgColor="black"
+        // bgColor="black"
         borderRadius="10"
       >
         <FiSearch size="20" color="white" />
@@ -66,7 +67,7 @@ const Sidebar = () => {
       {/* 2nd Section */}
       <Flex
         direction="row"
-        bgColor="black"
+        // bgColor="black"
         w="15vw"
         h="5vh"
         alignItems="center"
@@ -84,7 +85,7 @@ const Sidebar = () => {
         direction="column"
         gap="25px"
         alignContent="center"
-        bgColor="black"
+        // bgColor="black"
         borderRadius="10"
         w="15vw"
         h="30vh"
@@ -123,34 +124,26 @@ const Sidebar = () => {
       <Divider orientation="horizontal" mt="5" w="17vw" />
       {/* 3rd Section */}
       <Flex
-        dir="column"
+        direction="column"
         mt="5"
-        bgColor="black"
+        // bgColor="black"
         borderRadius="10"
-        w="12vw"
+        w="15vw"
         h="12vw"
-        overflowY="auto"
+        gap="6"
       >
-        <Grid templateColumns="1fr 1fr " gap="2px" textColor="white">
-          <Flex>
-            <Text>Legal</Text>
-          </Flex>
-          <Flex>
-            <Text>Privacy </Text>
-          </Flex>
-          <Flex>
-            <Text>Cookies</Text>
-          </Flex>
-          <Flex>
-            <Text>Privacy Policy</Text>
-          </Flex>
-          <Flex>
-            <Text>About Ads</Text>
-          </Flex>
-          <Flex>
-            <Text>Accessibilities</Text>
-          </Flex>
-        </Grid>
+        
+        <Flex direction="row" gap="6" textColor="white">
+          <Text>Legal</Text>
+          <Text>Privacy </Text>
+          <Text>Cookies</Text>
+        </Flex>
+        <Flex direction="row" gap="6" textColor="white">
+          <Text>About Ads</Text>
+          <Text>Accessibilities</Text>
+        </Flex>
+        <Flex direction="column" borderRadius="10"></Flex>
+        {/* </Grid> */}
       </Flex>
     </Flex>
   );
