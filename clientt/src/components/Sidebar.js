@@ -132,7 +132,6 @@ const Sidebar = () => {
         h="12vw"
         gap="6"
       >
-        
         <Flex direction="row" gap="6" textColor="white">
           <Text>Legal</Text>
           <Text>Privacy </Text>
@@ -142,7 +141,10 @@ const Sidebar = () => {
           <Text>About Ads</Text>
           <Text>Accessibilities</Text>
         </Flex>
-        <Flex direction="column" borderRadius="10"></Flex>
+        <Flex direction="row" gap="2" w="7vw" borderRadius="10" border="dashed" textColor="white">
+          <MdLanguage size="25" />
+          <Text size="xl">English</Text>
+        </Flex>
         {/* </Grid> */}
       </Flex>
     </Flex>
