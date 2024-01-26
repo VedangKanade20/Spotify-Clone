@@ -5,7 +5,7 @@ import { IoChevronBackCircleOutline } from "react-icons/io5";
 
 const HomeScreen = () => {
   return (
-    <Flex direction="row" w="100vw" h="90vh" bgColor="#000000" gap="3">
+    <Flex direction="row" maxW="100vw" h="90vh" bgColor="#000000" gap="3">
       <Sidebar />
 
       <Flex
@@ -44,6 +44,26 @@ const HomeScreen = () => {
             <Flex direction="row" gap="5" borderRadius="10px" w="40px">
               <Text fontWeight="bold" as="h3" size="xl" color="white">
                 Login
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
+        {/* MAIN */}
+        <Flex direction="column" bgColor="#1f1f1f" w="100%" h="100%">
+          <Flex
+            w="83vw"
+            h="5vh"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <Flex w="fit-content">
+              <Text textColor="white" as="h3" fontWeight="bold" size="xl">
+                Spotify Playlist
+              </Text>
+            </Flex>
+            <Flex w="fit-content" justifyContent="end">
+              <Text textColor="white" as="h3" fontWeight="bold" size="xl">
+                Show All
               </Text>
             </Flex>
           </Flex>
