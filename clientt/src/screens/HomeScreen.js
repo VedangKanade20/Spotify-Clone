@@ -5,38 +5,46 @@ import { IoChevronBackCircleOutline } from "react-icons/io5";
 
 const HomeScreen = () => {
   return (
-    <Flex direction="row" w="100vw" h="90vh" bgColor="#000000">
+    <Flex direction="row" w="100vw" h="90vh" bgColor="#000000" gap="3">
       <Sidebar />
-      <Divider orientation="vertical" h="90vh" />
+
       <Flex
         direction="column"
         w="100%"
         h="90vh"
         bgColor="#121212"
         borderRadius="12px"
+        mr="2"
       >
         {/* Header */}
         <Flex
           direction="row"
-          bgColor="gray"
+          bgColor="#121212"
           w="100% "
           h="7vh"
           borderRadius="12px"
         >
-          <Flex w="fit-content" gap="2">
+          <Flex w="73vw" gap="2">
             <IoChevronBackCircleOutline color="white" size="50" />
             <IoChevronForwardCircleOutline color="white" size="50" />
           </Flex>
-          <Flex justifyContent="right">
-            <Flex direction="row" gap="5">
-              <Text>Premium</Text>
-              <Text>Support</Text>
-              <Text>Download</Text>
+          <Flex direction="row " justifyItems="end" alignItems="center" gap="3">
+            <Flex
+              direction="row"
+              gap="3"
+              borderRadius="10px"
+              alignItems="center"
+              w="60px"
+            >
+              <Text fontWeight="bold" as="h3" size="xl" color="white">
+                Sign Up
+              </Text>
             </Flex>
-            <Divider orientation="vertical" size="5vh" />
-            <Flex direction="row" gap="5" borderRadius="10px" bgColor="black">
-              <Text>Login</Text>
-              <Text>Sign up</Text>
+            <Divider orientation="vertical" size="2" />
+            <Flex direction="row" gap="5" borderRadius="10px" w="40px">
+              <Text fontWeight="bold" as="h3" size="xl" color="white">
+                Login
+              </Text>
             </Flex>
           </Flex>
         </Flex>

@@ -15,6 +15,7 @@ const Sidebar = () => {
       w="17vw"
       bgColor="#121212"
       borderRadius="15"
+      ml="2"
     >
       {/* 1st Section */}
       <Flex
