@@ -14,7 +14,7 @@ const HomeScreen = () => {
         h="90vh"
         bgColor="#121212"
         borderRadius="12px"
-        mr="1"
+        mr="10px"
       >
         {/* Header */}
         <Flex
@@ -73,22 +73,31 @@ const HomeScreen = () => {
                 Spotify Playlist
               </Text>
             </Flex>
-            <Flex w="fit-content" justifyContent="end">
-              <Text textColor="gray" as="h3" fontWeight="bold" fontSize="2xl">
+            <Flex w="fit-content" justifyContent="end" mr="15px">
+              <Text textColor="gray" as="h3" fontWeight="bold" fontSize="md">
                 Show All
               </Text>
             </Flex>
           </Flex>
-
-          <Grid templateRows="1fr 1fr 1fr 1fr" gap="6">
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-            <GridItem w="100px" h="50px" bgColor="blue.50" />
-          </Grid>
+          <Flex direction="column" w="100%" overflowY="auto">
+            <Grid
+              justifyContent="center"
+              templateColumns="1fr 1fr 1fr 1fr"
+              gap="16"
+              mt="15px"
+              ml="15px"
+              overflowY="auto"
+            >
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              <GridItem w="200px" h="250px" bgColor="blue.50" />
+            </Grid>
+          </Flex>
         </Flex>
       </Flex>
     </Flex>
