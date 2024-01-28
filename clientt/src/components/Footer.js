@@ -14,7 +14,7 @@ const Footer = () => {
       <Flex direction="column" alignContent="start" w="95vw">
         <Flex>
           <Text fontFamily="sans-serif" fontSize="xl">
-           Preview of Spotify
+            Preview of Spotify
           </Text>
         </Flex>
         <Divider orientation="horizontal" color="black" w="51vw" />

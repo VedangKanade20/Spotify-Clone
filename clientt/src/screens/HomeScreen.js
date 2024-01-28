@@ -1,7 +1,17 @@
-import { Divider, Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import {
+  Button,
+  Divider,
+  Flex,
+  Grid,
+  GridItem,
+  Heading,
+  IconButton,
+  Text,
+} from "@chakra-ui/react";
 import Sidebar from "../components/Sidebar";
 import { IoChevronForwardCircleOutline } from "react-icons/io5";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const HomeScreen = () => {
   return (
@@ -68,7 +78,7 @@ const HomeScreen = () => {
             justifyContent="space-between"
             mt="10px"
           >
-            <Flex w="fit-content">
+            <Flex w="fit-content" px="20px">
               <Text textColor="gray" as="h3" fontWeight="bold" fontSize="2xl">
                 Spotify Playlist
               </Text>
@@ -79,23 +89,26 @@ const HomeScreen = () => {
               </Text>
             </Flex>
           </Flex>
-          <Flex direction="column" w="100%" overflowY="auto">
+          <Flex direction="column" w="100%" height="530px">
             <Grid
               justifyContent="center"
-              templateColumns="1fr 1fr 1fr 1fr"
+              templateColumns="repeat(5,1fr)"
               gap="16"
               mt="15px"
               ml="15px"
-              overflowY="auto"
+              overflowY="scroll"
             >
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
-              <GridItem w="200px" h="250px" bgColor="blue.50" />
+              {[1, 1, 1, 1, 1].map(() => {
+                return (
+                  <GridItem w="175px" h="250px" bgColor="blue.50">
+                    <Flex
+                      direction="column"
+                      justifyContent="center"
+                      alignItems="center"
+                    ></Flex>
+                  </GridItem>
+                );
+              })}
             </Grid>
           </Flex>
         </Flex>
