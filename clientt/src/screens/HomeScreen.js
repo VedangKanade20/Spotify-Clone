@@ -7,15 +7,29 @@ import {
   Heading,
   IconButton,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import Sidebar from "../components/Sidebar";
 import { IoChevronForwardCircleOutline } from "react-icons/io5";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import IMAGE from "../images/mainLOGO.png";
+import { FaInstagram } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaFacebookF } from "react-icons/fa";
 
 const HomeScreen = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <Flex direction="row" maxW="100vw" h="90vh" bgColor="#000000" gap="3">
+    <Flex
+      direction="row"
+      maxW="100vw"
+      h="90vh"
+      bgColor="#000000"
+      gap="3"
+      overflow="auto"
+    >
       <Sidebar />
 
       <Flex
@@ -89,27 +103,102 @@ const HomeScreen = () => {
               </Text>
             </Flex>
           </Flex>
-          <Flex direction="column" w="100%" height="530px">
+          <Flex direction="column" w="100%" height="250px">
             <Grid
               justifyContent="center"
               templateColumns="repeat(5,1fr)"
               gap="16"
               mt="15px"
               ml="15px"
+              px="10px"
               overflowY="scroll"
             >
               {[1, 1, 1, 1, 1].map(() => {
                 return (
-                  <GridItem w="175px" h="250px" bgColor="blue.50">
+                  <GridItem w="175px" h="250px" bgColor="#171717">
                     <Flex
                       direction="column"
                       justifyContent="center"
                       alignItems="center"
-                    ></Flex>
+                      mt="10px"
+                      textColor="white"
+                    >
+                      <Flex
+                        w="145px"
+                        h="145px"
+                        bgColor="gray"
+                        alignItems="center"
+                        direction="column"
+                      >
+                        <Image src={IMAGE} w="50px" h="20px" />
+                        <Flex
+                          justifyContent="center"
+                          direction="column"
+                          alignItems="center"
+                        ></Flex>
+                      </Flex>
+                      <Text>Today's Hits</Text>
+                      <Text>By Yoooo</Text>
+                    </Flex>
                   </GridItem>
                 );
               })}
             </Grid>
+          </Flex>
+          {/* END OF GRID */}
+
+          <Flex
+            direction="row"
+            justifyContent="space-between"
+            px="20px"
+            py="20px"
+          >
+            <Flex
+              direction="row"
+              gap="60px"
+              textColor="white"
+              textAlign="left"
+              px="10px"
+              py="10px"
+            >
+              <Flex direction="column" gap="10px">
+                <Heading fontSize="lg">Company</Heading>
+                <Text>About</Text>
+                <Text>Jobs</Text>
+                <Text>For the Record</Text>
+              </Flex>
+              <Flex direction="column" gap="10px">
+                <Heading fontSize="lg"> Communities</Heading>
+                <Text>For Artists</Text>
+                <Text>Developers</Text>
+                <Text>Advertising</Text>
+                <Text>Investors</Text>
+                <Text>Vendors</Text>
+              </Flex>
+              <Flex direction="column" gap="10px">
+                <Heading fontSize="lg">Useful Links</Heading>
+                <Text>Support</Text>
+                <Text>Free Mobile App</Text>
+              </Flex>
+            </Flex>
+            {/* Socials */}
+            <Flex justifyContent="end" textColor="white" w="300px">
+              <Flex
+                direction="row"
+                w="300px"
+                h="100px"
+                gap="12px"
+                justifyContent="end"
+              >
+                <FaInstagram size="30px" />
+                <RiTwitterXFill size="30px" />
+                <FaFacebookF size="30px" />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Divider orientation="horizontal" w="100%" />
+          <Flex alignItems="center" justifyContent="space-between" w="95%">
+            <p>© {currentYear} Spotify AB</p>
           </Flex>
         </Flex>
       </Flex>
