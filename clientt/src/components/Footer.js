@@ -35,7 +35,7 @@ const Footer = () => {
         }}
       >
         <Text fontFamily="sans-serif" fontSize="xl">
-          SignUp For Free!!
+          SignUp
         </Text>
       </Flex>
     </Flex>
